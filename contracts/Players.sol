@@ -58,7 +58,7 @@ contract Players is ERC721, Ownable {
         combId2Ind[ _combId ] = tokenId;
         combId[ tokenId ] = _combId;
 
-        string memory attr = getAttributes(tokenId);
+        // string memory attr = getAttributes(tokenId);
 
         _safeMint(msg.sender, tokenId);
         emit Minted(tokenId, _combId, msg.sender);
